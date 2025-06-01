@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrivacyLens</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="shield">🛡️</span>
+                <h1>PrivacyLens</h1>
+            </div>
+            <div class="refresh-btn" id="refreshBtn" title="Refresh Analysis">🔄</div>
+        </header>
+
+        <div class="score-section">
+            <div class="score-circle" id="scoreCircle">
+                <span class="score-value" id="scoreValue">--</span>
+                <span class="score-label">Privacy Score</span>
+            </div>
+            <div class="score-status" id="scoreStatus">Analyzing...</div>
+        </div>
+
+        <div class="analysis-section">
+            <div class="section-header">
+                <span class="icon">🔍</span>
+                <h2>Privacy Analysis</h2>
+            </div>
+            
+            <div class="risk-categories">
+                <!-- Cookies -->
+                <div class="risk-item" id="cookiesRisk">
+                    <div class="risk-header">
+                        <span class="risk-icon">🍪</span>
+                        <span class="risk-title">Cookies</span>
+                        <span class="risk-badge" id="cookiesBadge">0</span>
+                    </div>
+                    <div class="risk-details" id="cookiesDetails"></div>
+                </div>
+
+                <!-- Third-party Scripts -->
+                <div class="risk-item" id="scriptsRisk">
+                    <div class="risk-header">
+                        <span class="risk-icon">⚠️</span>
+                        <span class="risk-title">Third-party Scripts</span>
+                        <span class="risk-badge" id="scriptsBadge">0</span>
+                    </div>
+                    <div class="risk-details" id="scriptsDetails"></div>
+                </div>
+
+                <!-- Storage -->
+                <div class="risk-item" id="storageRisk">
+                    <div class="risk-header">
+                        <span class="risk-icon">💾</span>
+                        <span class="risk-title">Local Storage</span>
+                        <span class="risk-badge" id="storageBadge">0</span>
+                    </div>
+                    <div class="risk-details" id="storageDetails"></div>
+                </div>
+
+                <!-- Iframes -->
+                <div class="risk-item" id="iframesRisk">
+                    <div class="risk-header">
+                        <span class="risk-icon">🖼️</span>
+                        <span class="risk-title">Third-party Iframes</span>
+                        <span class="risk-badge" id="iframesBadge">0</span>
+                    </div>
+                    <div class="risk-details" id="iframesDetails"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommendations" id="recommendations">
+            <div class="section-header">
+                <span class="icon">💡</span>
+                <h2>Recommendations</h2>
+            </div>
+            <div class="recommendations-list" id="recommendationsList"></div>
+        </div>
+
+        <footer>
+            <div class="footer-info">
+                <span>Last updated: <span id="lastUpdated">--</span></span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
