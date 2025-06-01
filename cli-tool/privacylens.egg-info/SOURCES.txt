@@ -1,0 +1,13 @@
+README.md
+setup.py
+privacylens/__init__.py
+privacylens/__main__.py
+privacylens/analyzer.py
+privacylens/reporter.py
+privacylens/utils.py
+privacylens.egg-info/PKG-INFO
+privacylens.egg-info/SOURCES.txt
+privacylens.egg-info/dependency_links.txt
+privacylens.egg-info/entry_points.txt
+privacylens.egg-info/requires.txt
+privacylens.egg-info/top_level.txt

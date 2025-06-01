@@ -1,0 +1,2 @@
+[console_scripts]
+privacylens = privacylens.__main__:cli
